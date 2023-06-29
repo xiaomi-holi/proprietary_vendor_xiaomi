@@ -61,13 +61,14 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="100" />
                 <Prop Name="ro.lmk.thrashing_threshold" Value="30" />
                 <Prop Name="ro.lmk.thrashing_decay" Value="5" />
-                <Prop Name="ro.lmk.nstrat_low_swap" Value="10" />
+                <Prop Name="ro.lmk.nstrat_low_swap" Value="30" />
                 <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="4" />
                 <Prop Name="ro.lmk.enhance_batch_kill" Value="false" />
                 <Prop Name="ro.lmk.enable_watermark_check" Value="true" />
                 <Prop Name="ro.lmk.enable_userspace_lmk" Value="true" />
                 <Prop Name="ro.lmk.enable_preferred_apps"   Value="true" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="96" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.appcompact.enable_app_compact" Value="false" />
                 <Prop Name="vendor.appcompact.full_compact_type"  Value="2" />

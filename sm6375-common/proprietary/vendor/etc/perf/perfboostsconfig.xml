@@ -15,21 +15,21 @@
 
 <BoostConfigs>
     <PerfBoost>
-      
-   <!--app lauch boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
+
+    <!--app lauch boost-->
+        <!-- SCHED DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED UPMIGRATE resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MAX_FREQ resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-
         <!-- Type="1", main launch boost of 2sec -->
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="holi"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF, 
+                       0x40800100, 0xFFF, 0x41818000, 0xFF, 0x41800000, 0xFF, 0x40400000, 0x1, 
+                       0x42C10000, 0x1, 0x43400000, 0xFFFF, 0x4281C000, 2000" />
+
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="blair"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF, 
@@ -52,9 +52,9 @@
         <!-- Type="1", resume boost of 0.6sec -->
         <Config
             Id="0x00001082" Type="1" Enable="true" Timeout="600" Target="blair"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF, 
-                       0x40800100, 0xFFF, 0x41818000, 0xFF, 0x41800000, 0xFF, 0x40400000, 0x1, 
-                       0x42C10000, 0x1, 0x43400000, 0xFFFF, 0x4281C000, 2000" />     
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF, 0x41818000, 0xFF, 0x41800000, 0xFF, 0x40400000, 0x1,
+                       0x42C10000, 0x1, 0x43400000, 0xFFFF, 0x4281C000, 2000" />
 
     <!--app lauch boost (disabling packing)-->
         <!-- POWER COLLAPSE resource opcode, value-->
@@ -145,12 +145,12 @@
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="holi"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0x7F3,
-                       0x40800100, 0x70C" />
+                       0x40800100, 0x70C, 0x42808000, 0, 0x42804000, 0, 0x4280C00, 700000000, 0X4281000, 700000000" />
 
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="blair"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF" />
+                       0x40800100, 0xFFF, 0x42808000, 0, 0x42804000, 0" />
 
     <!--Vertical Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -160,11 +160,11 @@
         <!-- Type="1", Vertical Scroll boost -->
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="holi" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 1017, 0x40800100, 940, 0x40C00000, 2" />
+            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="blair" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 2208, 0x40C00000, 2" />
+            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -175,20 +175,20 @@
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="holi" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 940, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="blair" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="holi" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2035, 0x40800100, 1478, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="blair" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1516, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                       0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
@@ -208,11 +208,11 @@
         <!-- Type="2", Horizontal Scroll boost -->
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="holi" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 1017, 0x40800100, 940, 0x40C00000, 2" />
+            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
          <Config
              Id="0x00001080" Type="2" Enable="true" Target="blair" Fps="60"
-             Resources="0x43010000, 38, 0x40800000, 2208, 0x40C00000, 2" />
+             Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -223,20 +223,20 @@
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="holi" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 940, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="blair" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="holi" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2035, 0x40800100, 1478, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="blair" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1516, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
@@ -256,11 +256,11 @@
         <!-- SCHEDBOOST resource opcode, value-->
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="holi" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 1017, 0x40800100, 940, 0x40C00000, 2" />
+            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="blair" Fps="60"
-            Resources="0x43010000, 38, 0x40800000, 2208, 0x40C00000, 2" />
+            Resources="0x43010000, 38, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -271,20 +271,20 @@
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="holi" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 940, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="blair" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2016, 0x40800100, 1600, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="holi" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2035, 0x40800100, 1478, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="blair" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1516, 0x40C00000, 2,
+            Resources="0x43010000, 0x26, 0x40800000, 2208, 0x40800100, 1651, 0x40C00000, 2,
                        0x40C74000, 0xC0, 0x40408000, 0x27" />
 
         <Config
