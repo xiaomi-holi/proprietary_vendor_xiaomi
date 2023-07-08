@@ -214,7 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/config/strait_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_qrd_lsm6dst_0.json \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/config/strait_qrd_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_qrd_tmd2725.json \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/config/strait_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_tmd2725.json \
-    vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
     vendor/xiaomi/moonstone/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
