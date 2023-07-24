@@ -71,8 +71,8 @@
                 <CodecName>H.264</CodecName>
                 <Profile>0</Profile>
                 <Level>6</Level>
-                <HorizontalResolution>3840</HorizontalResolution>
-                <VerticalResolution>2160</VerticalResolution>
+                <HorizontalResolution>1920</HorizontalResolution>
+                <VerticalResolution>1080</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
@@ -86,8 +86,8 @@
                 <CodecName>H.264</CodecName>
                 <Profile>1</Profile>
                 <Level>6</Level>
-                <HorizontalResolution>3840</HorizontalResolution>
-                <VerticalResolution>2160</VerticalResolution>
+                <HorizontalResolution>1920</HorizontalResolution>
+                <VerticalResolution>1080</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
@@ -101,8 +101,8 @@
                 <CodecName>H.265</CodecName>
                 <Profile>0</Profile>
                 <Level>4</Level>
-                <HorizontalResolution>3840</HorizontalResolution>
-                <VerticalResolution>2160</VerticalResolution>
+                <HorizontalResolution>1920</HorizontalResolution>
+                <VerticalResolution>1080</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>

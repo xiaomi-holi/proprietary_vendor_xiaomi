@@ -120,6 +120,9 @@ INSERT INTO qcril_emergency_source_mcc_table VALUES('602','122','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('602','123','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('602','180','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('602','126','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('456','117','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('456','118','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('456','119','','');
 INSERT INTO qcril_emergency_source_voice_table VALUES('456','117','','full');
 INSERT INTO qcril_emergency_source_voice_table VALUES('456','118','','full');
 INSERT INTO qcril_emergency_source_voice_table VALUES('456','119','','full');
@@ -360,15 +363,13 @@ INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','110','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','113','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','118','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','115','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','119','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','09','129','','');
+
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','110','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','113','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','118','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','115','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','119','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','28','129','','');
+
 
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','10','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('510','10','113','','');
@@ -424,10 +425,36 @@ INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','01','129','
 
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','11','119','','full');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','11','129','','full');
+/*M17-T code for HQ-298859 by lijiazheng at 2023/06/14 start*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','11','117','','full');
 
-INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','89','118','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','89','110','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','89','115','','full');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','89','119','','full');
+
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896228', '112', 1, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896228', '110', 0, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896228', '113', 2, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896228', '118', 1, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896228', '115', 3, 'home');
+
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896209', '112', 1, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896209', '110', 0, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896209', '113', 2, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896209', '118', 1, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896209', '115', 3, 'home');
+
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896210', '113', 2, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896201', '112', 1, 'home');
+INSERT INTO qcril_emergency_source_escv_iin_table VALUES('896201', '110', 0, 'home');
+
+
+
+/*M17-T code for HQ-298859 by lijiazheng at 2023/06/14 end*/
+
+/*M17-T code for HQ-290495 by yefeng at 2023/05/05 start*/
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('510','89','129','','full');
+/*M17-T code for HQ-290495 by yefeng at 2023/05/05 end*/
 
 /* hq-lijiazheng for HQ-285290 @2023.02.22 start*/
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('425','01','100','','');

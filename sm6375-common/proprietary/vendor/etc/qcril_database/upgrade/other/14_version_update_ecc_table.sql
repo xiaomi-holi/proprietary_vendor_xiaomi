@@ -297,3 +297,25 @@ DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '208' AND MNC
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('427','01','135','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('427','02','135','','');
 /* hq-lijiazheng for HQ-285287 @2023.02.22 end*/
+
+/* hq-yefeng for HQ-296216 @2023.05.17 start*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('716','10','105','','');
+/* hq-yefeng for HQ-296216 @2023.07.17 end*/
+
+/* hq-yefeng for HQ-296216 @2023.05.17 start*/
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '716' AND NUMBER = '105';
+/* hq-yefeng for HQ-296216 @2023.07.17 end*/
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '911';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '112';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '000';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '08';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '110';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '118';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '214' AND NUMBER = '999';
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '000';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '110';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '999';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '08';
